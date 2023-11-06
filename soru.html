@@ -9,21 +9,71 @@
 
 </body>
 <script>
-    var numbers=[33, 11,-5,20 ,1, 55, 100, 2, 94, 55, 11]
-    var maxnumber=numbers[0];
-    for(var i = i ; i < numbers.length;i++){
-    if (numbers[i]> maxnumber){
-    maxnumber=number[i];
-     }
-   }
-   document.write("enbuyuk sayi:" + maxnumber+"<br>");
+   let text1 ="    cagatay yildiz";
+   let cleanedtext1 = text.replace(/\*/g, "");
+   console.log(cleanedtext1);
 
-   var minNumber=number[0];
-   for(var i= i< numbers.length;i++){
-if(number[i]<minNumber){
-    minNumber=number[i];
-}
-   }
-   document.write("enkucuk sayi:"+ minNumber+"<br>");
+
+   let text2 =  "***Çağatay Yildiz***";
+   let cleanedtext2 = text.replace(/\*/g, "");
+   console.log(cleanedtext2);
+
+let text3 = "Çağatay  Yildiz";
+let cleanedtext3 = text3.replace(/\s+/g, " ");
+console.log(cleanedtext3);
+
+
+let text4 = "**Tech Career**";
+let cleanedtext4 = text4.replace(/\*/g, "");
+console.log(cleanedtext4);
+
+let text5 = "Tech Career";
+let starredText5 = `***${text5}***`;
+console.log(starredText5);
+
+// have to read about it more has some problem with split some answe  that copyed from frineds
+// the 5 6 answer 
+// “Tech Career Bilişim teknolojileri” metnindeki son kelimeyi büyült (SUBSTRING)
+//“Tech Career” kelimelerin ilk harflerini büyült (Substring ve upper)
+//“Tech Career Bilişim teknolojileri” metnindeki son kelimeyi büyült (SUBSTRING)
+
+let isim7= "Tech Career Bilişim teknolojileri"
+let lastWord=isim7.substring(19,33).toUpperCase()
+let newWord = isim7.replaceAll(" teknolojileri",lastWord)
+ 
+console.log(newWord)
+
+
+// “Tech Career” kelimelerin ilk harflerini büyült (Substring ve upper)
+
+var metin = "tech career";
+var kelimeler = metin.split(" ");
+var buyukHarfKelimeler = kelimeler.map(function(kelime) {
+  return kelime[0].toUpperCase() + kelime.substring(1);
+});
+var yeniMetin = buyukHarfKelimeler.join(" ");
+console.log(yeniMetin);
+
+
+
+
+
+
+// next 
+ ///“Tech Career” isimli metnin soluna ve sağına 3 yıldız koy. “***Tech Career***” ( Normal toplama operatörü)
+ var name5 = "Tech Career"
+        var result6 = "***" +name5 + "***"
+        console.log(result6);
+
+        ////“Tech Career Bilişim teknolojileri” metnindeki son kelimeyi büyült (SUBSTRING)
+        let company = "Tech Career Bilişim teknolojileri";
+        const result7= company.substring(20,33).toUpperCase()
+        console.log(result7)
+
+
+
+
+
+        
 </script>
 </html>
